@@ -28,6 +28,7 @@ User Technology Interest
    Solution Designer
           ↓
     Project Blueprint
+
 Research Agent
 
 Collects relevant research from arXiv and GitHub and summarizes useful trends, technologies, datasets, APIs, and industry opportunities.
@@ -40,6 +41,7 @@ Solution Designer
 
 Generates the project's architecture, data flow, security considerations, deployment approach, and 4-week roadmap.
 
+
 🏗️ Architecture
 Next.js + React + TypeScript
             ↓
@@ -51,6 +53,8 @@ Next.js + React + TypeScript
        ↙         ↘
    Research      MySQL
  arXiv/GitHub   SQLAlchemy
+
+
 🗄️ Database
 
 The application uses MySQL + SQLAlchemy ORM.
@@ -63,12 +67,15 @@ ai_project_mentor
 
 Projects, architecture details, evaluation scores, and development roadmaps are stored for later access through the History page.
 
+
 🔌 REST API
 Method	Endpoint	Purpose
 GET	/	API status
 GET	/hello	Connectivity test
 POST	/generate	Generate project blueprint
 GET	/history	Retrieve project history
+
+
 🛡️ Backend Engineering
 FastAPI REST API
 Pydantic request and AI-output validation
@@ -77,6 +84,7 @@ CORS configuration
 Centralized exception handling
 Application logging
 SQLAlchemy database integration
+
 🧰 Tech Stack
 
 Frontend: Next.js, React, TypeScript, Tailwind CSS
@@ -92,13 +100,14 @@ System Engineer	APIs, SQL, database design, architecture, logging, error handlin
 AI/ML Engineer	LLMs, LangGraph, LangChain, AI workflows
 Data Analyst	MySQL, metrics, scoring, historical data
 Data Scientist	Research analysis, evaluation, structured data
-🖥️ Application
 
+🖥️ Application
 The application provides three main pages:
 
 Home — Generate AI project blueprints
 About — Understand the workflow and technology
 History — View previously generated projects
+
 ⚙️ Run Locally
 Backend
 cd backend
@@ -121,6 +130,7 @@ NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 Open:
 
 http://localhost:3000
+
 🔮 Future Improvements
 Automated API and integration testing
 GitHub Actions CI/CD
@@ -128,6 +138,7 @@ Production deployment
 User authentication
 Advanced project analytics
 Industry-specific project recommendations
+
 👩‍💻 Author
 
 Anuhya
